@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.delli3.proyectofinal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".RegistrarActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.delli3.proyectofinal.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".detalle_producto">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.delli3.proyectofinal.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.delli3.proyectofinal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".registar_productos"
+            android:label="@string/title_activity_registar_productos"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.delli3.proyectofinal.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Repuestos"
+            android:label="@string/title_activity_ventas"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.delli3.proyectofinal.MainActivity" />
+        </activity>
+
+        <activity android:name=".MisPedidos" >
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.delli3.proyectofinal.MainActivity" />
+        </activity>
+
+        <activity android:name=".Articulos_vendidos">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.delli3.proyectofinal.MainActivity" /></activity>
+    </application>
+
+</manifest>
